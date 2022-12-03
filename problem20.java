@@ -1,4 +1,5 @@
 public class problem20 {
+    // Facotiral 100 is too large
     public static void main(String[] args) {
         long factorial100 = factorial(100L);
         System.out.println(factorial100);
