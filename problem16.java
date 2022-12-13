@@ -1,4 +1,6 @@
 public class problem16 {
+    // ** JAVA VERSION NOT WORKING **
+
     // Math.pow(2, 1000) not displaying all nums
     public static void main(String[] args) {
         long bigNumber = 1;
