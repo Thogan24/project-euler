@@ -5,7 +5,7 @@ def main():
         if (isBouncy(number)):
             bouncyNumbers += 1
         number += 1
-    print(bouncyNumbers)
+        print(str(bouncyNumbers) + " " + str(number))
     print(number)
     
 
@@ -14,10 +14,11 @@ def main():
 def isBouncy(num):
     isIncreasing = True
     isDecreasing = True
-    lastDigit = 0
+    lastDigit = int(str(num)[1])
     if (num < 100):
         return False
-    for i in range(len(str(num))):
+        #100
+    for i in range(1, len(str(num))):
         if (isIncreasing and isDecreasing):
             if (int(str(num)[i]) > lastDigit):
                 isDecreasing = False
