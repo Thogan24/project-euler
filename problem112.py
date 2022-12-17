@@ -17,19 +17,17 @@ def isBouncy(num):
     lastDigit = int(str(num)[1])
     if (num < 100):
         return False
-        #100
+    
     for i in range(1, len(str(num))):
-        if (isIncreasing and isDecreasing):
-            if (int(str(num)[i]) > lastDigit):
-                isDecreasing = False
+        if (isIncreasing):
             if (int(str(num)[i]) < lastDigit):
                 isIncreasing = False
-        elif (isIncreasing):
-            if (int(str(num)[i]) < lastDigit):
-                return False
-        elif (isDecreasing):
+        if (isDecreasing):
             if (int(str(num)[i]) > lastDigit):
-                return False
+                isDecreasing = False
+    
+    if (isDecreasing or isIncreasing):
+        return False
     return True
     
 
