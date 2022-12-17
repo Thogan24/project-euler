@@ -1,3 +1,5 @@
+// Solved
+
 public class problem5 {
     public static void main(String[] args) {
         int number = 0;

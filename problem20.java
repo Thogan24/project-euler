@@ -1,5 +1,6 @@
+// Unsolved in java
+
 public class problem20 {
-    // ** JAVA VERSION NOT WORKING **
     // Facotiral 100 is too large
     public static void main(String[] args) {
         long factorial100 = factorial(100L);

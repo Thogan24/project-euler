@@ -1,3 +1,5 @@
+// Solved
+
 public class problem6 {
     public static void main(String[] args) {
         System.out.printf("%.0f", squareOfSums(100) - sumOfSquares(100));

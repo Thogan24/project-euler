@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     maxDigitSum = 0
     i = 99

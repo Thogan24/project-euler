@@ -1,3 +1,5 @@
+// Solved
+
 public class problem9 {
     public static void main(String[] args) {
         for(int a = 0; a < 1000; a++){

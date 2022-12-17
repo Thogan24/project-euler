@@ -1,3 +1,5 @@
+# Unsolved
+
 def main():
     #Loop through all numbers till 10000
     #Check if amicable

@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     primeCount = 0
     count = 0

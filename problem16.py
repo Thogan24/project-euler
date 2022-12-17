@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     #print(pow(2, 1000))
     sumOfAllDigits(pow(2, 1000))

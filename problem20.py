@@ -1,3 +1,5 @@
+# Solved
+
 import math
 def main():
     factorial100 = list(str(math.factorial(100)))

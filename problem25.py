@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     i = 1
     while(i < 10000000):

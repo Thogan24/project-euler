@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     num = 2
     sumOfAll = 0

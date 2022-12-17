@@ -1,3 +1,5 @@
+// Unsolved in java
+
 public class problem30 {
     public static void main(String[] args) {
         float i = 0;

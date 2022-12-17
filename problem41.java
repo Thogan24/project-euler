@@ -1,3 +1,5 @@
+// Unsolved in java
+
 public class problem41 {
     // Pandigital not working
     public static void main(String[] args) {

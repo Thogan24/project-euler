@@ -1,3 +1,5 @@
+# Solved
+
 import math
 
 def main():

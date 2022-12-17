@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     d = 0
     sum = 0

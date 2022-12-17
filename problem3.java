@@ -1,3 +1,5 @@
+// Solved
+
 public class problem3 {
     
     static boolean isPrime(double n)

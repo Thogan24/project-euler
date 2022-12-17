@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     sum = 0
     mod = 10000000000
