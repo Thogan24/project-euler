@@ -1,3 +1,5 @@
+# Solved
+
 def main():
     num = 10
     sumOfTruncatablePrimes = 0

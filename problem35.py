@@ -1,4 +1,4 @@
-# Unsolved
+# Solved
 
 def main():
     i = 1
@@ -7,19 +7,19 @@ def main():
         if(isCircularPrime(i)):
             count += 1
         i += 1
-    #print(count)
+        print(str(i) + " | " + str(count))
 
 
 def isCircularPrime(num):
     
     for i in range(len(str(num))):
-        if (isPrime(i) == False):
+        if (isPrime(num) == False):
             return False
         lastDigit = num % 10
         num = num // 10
         stringNum = str(lastDigit) + str(num)
         num = int(stringNum)
-        print(num)
+        #print(num)
     return True
 
 
@@ -37,7 +37,7 @@ def isPrime(n):
     # then loop by 6. 
     f = 5
     while f <= r:
-        print('\t',f)
+        #print('\t',f)
         if n % f == 0: return False
         if n % (f+2) == 0: return False
         f += 6
