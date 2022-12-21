@@ -1,4 +1,4 @@
-# Unsolved
+# Solved
 
 def main():
     sumOfProducts = 0
