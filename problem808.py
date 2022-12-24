@@ -3,12 +3,14 @@ import math
 def main():
     count = 0
     sumOfReversiblePrimeSquares = 0
-    i = 0
+    i = 1
     while(count <= 50):
         primeSquare = i**2
-        if(isPrime(i) and (not isPalindromic(primeSquare) and isPrime(math.sqrt(reverse(primeSquare))))):
+        if(isPrime(i) and isPrime(math.sqrt(reverse(primeSquare))) and (not isPalindromic(primeSquare))):
             count += 1
+            sumOfReversiblePrimeSquares += i
         i += 1
+    print(sumOfReversiblePrimeSquares)
 
 
 
@@ -39,5 +41,13 @@ def isPrime(n):
 
 def isPalindromic(num):
     # Finish isPalindromic function
+    # Must change to for loop instead
+    reverseNum = str(reverse(num))
+    numString = str(num)
+    numLength = len(numString)
+    if (numLength % 2 == 0):
+        return int(numString[0, numLength / 2]) + int(reverseNum[numLength / 2, numLength])
+    #print(numString[0, 2])
+    return int(numString[0, int((numLength // 2) + 1)]) + int(reverseNum[numLength / 2, numLength])
 
 main()
