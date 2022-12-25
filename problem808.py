@@ -15,11 +15,12 @@ def main():
 
 
 def reverse(num):
-    reverseNum = 0
-    while(num > 1):
-        reverseNum += (num % 10)
+    
+    reverseNum = ""
+    while(num > 0):
+        reverseNum += str(num % 10)
         num = num // 10
-    return reverseNum
+    return int(reverseNum)
 
 def isPrime(n):
     if n == 2 or n == 3: return True
@@ -45,9 +46,39 @@ def isPalindromic(num):
     reverseNum = str(reverse(num))
     numString = str(num)
     numLength = len(numString)
+    answer = ""
+    answerSecondHalf = ""
     if (numLength % 2 == 0):
-        return int(numString[0, numLength / 2]) + int(reverseNum[numLength / 2, numLength])
-    #print(numString[0, 2])
-    return int(numString[0, int((numLength // 2) + 1)]) + int(reverseNum[numLength / 2, numLength])
+        for i in range(int(numLength / 2)):
+            answer += numString[i]
+            answerSecondHalf += reverseNum[i]
+    else:
+        for k in range(int(numLength // 2)):
+            answer += numString[k]
+            answerSecondHalf += reverseNum[k]
+    return answer == answerSecondHalf
 
+#print(isPalindromic(12321))
 main()
+
+
+
+
+# Accidentally made function that makes palindromes out of numbers, not checks if they're palindromic
+
+# if (numLength % 2 == 0):
+#         for i in range(numLength / 2):
+#             answer += numString[i]
+#         for j in range(numLength / 2, numLength):
+#             answer += numString[j]
+#         #return int(numString[0, numLength / 2]) + int(reverseNum[numLength / 2, numLength])
+#     else:
+#         for k in range(numLength // 2 + 1):
+#             answer += numString[k]
+#         for l in range(numLength // 2 + 1, numLength):
+#             answer += numString[j]
+#         #return int(numString[0, int((numLength // 2) + 1)]) + int(reverseNum[numLength / 2, numLength])
+#     return answer
+
+
+144454441
