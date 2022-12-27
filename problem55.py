@@ -1,9 +1,9 @@
 # Unsolved
 
-#
+# Not sure what the problem here is at it produces an answer very close to the correct one, but not the correct one
 def main():
     lyrchrelNumberCount = 0
-    for i in range(1, 10000):
+    for i in range(0, 10000):
         lyrchrel = True
         num = i
         cycleCount = 0
@@ -11,7 +11,7 @@ def main():
             if (isPalindromic(num)):
                 lyrchrel = False
                 break
-            num += reverse(num)
+            num += int(reverse(num))
             cycleCount += 1
         if(lyrchrel):
             lyrchrelNumberCount += 1
@@ -19,23 +19,25 @@ def main():
 
 
 
-
+# Changed this function so that it returns a string
 def reverse(num):
     
     reverseNum = ""
     while(num > 0):
         reverseNum += str(num % 10)
+        #print(str(num % 10))
         num = num // 10
-    return int(reverseNum)
+    return (reverseNum)
 
 def isPalindromic(num):
-    reverseNum = str(reverse(num))
+    reverseNum = reverse(num)
     numString = str(num)
     numLength = len(numString)
     answer = ""
     answerSecondHalf = ""
     if (numLength % 2 == 0):
         for i in range(int(numLength / 2)):
+            #print(reverseNum)
             answer += numString[i]
             answerSecondHalf += reverseNum[i]
     else:
