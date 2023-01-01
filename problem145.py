@@ -5,7 +5,8 @@ def main():
     for i in range (10**9):
         if(allDigitsOdd(i + reverse(i))):
             count += 1
-            #print(str(i) + " | " + str(count))
+            
+            print(str(i) + " | " + str(count))
     print(count)
 
 
